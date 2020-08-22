@@ -26,6 +26,8 @@ jobs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx' 
 
+  - task: PublishBuildArtifacts@1
+
 - job: Windows
   pool:
     vmImage: 'windows-2019'
